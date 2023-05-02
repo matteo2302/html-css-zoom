@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding-top: 70px;
+  background-color: black;
+}
+header {
+  display: flex;
+  height: 60px;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+main {
+  margin: 0 60px;
+}
+
+footer {
+  height: 90px;
+  background-color: rgb(34, 34, 34);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
