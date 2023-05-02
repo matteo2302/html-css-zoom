@@ -18,16 +18,48 @@ header {
   justify-content: flex-end;
   align-items: center;
   gap: 7px;
+  z-index: 1;
+  background-color: black;
 }
 header div {
   padding: 6px 6px;
   background-color: rgb(74, 74, 74);
   font-size: 15px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
+/****************************main*********************************/
 main {
-  margin: 0 60px;
+  overflow-y: auto;
+  height: calc(100vh - 140px);
 }
+.container {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  flex-basis: calc(100% / 7 - 35px);
+}
+.container div {
+  position: relative;
+}
+img {
+  padding-bottom: 7px;
+}
+a {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  bottom: 18px;
+  left: 5px;
+  padding: 3px;
+  background-color: rgb(105, 117, 128);
+  border-radius: 5px;
+  font-size: 14px;
+}
+/****************************footer*****************************/
 
 footer {
   height: 90px;
