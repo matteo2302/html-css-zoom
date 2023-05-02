@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 70px;
   background-color: black;
 }
 /******************************header*******************************/
@@ -12,13 +11,10 @@ header {
   display: flex;
   height: 50px;
   color: white;
-  position: fixed;
-  width: 100vw;
-  top: 0;
+  width: 100%;
   justify-content: flex-end;
   align-items: center;
   gap: 7px;
-  z-index: 1;
   background-color: black;
 }
 header div {
@@ -40,20 +36,23 @@ main {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  flex-basis: calc(100% / 7 - 35px);
 }
 .container div {
   position: relative;
 }
+.container > div {
+  flex-basis: calc((100% - 35px) / 7);
+}
 img {
+  width: 100%;
   padding-bottom: 7px;
 }
 a {
   position: absolute;
   color: white;
   text-decoration: none;
-  bottom: 18px;
-  left: 5px;
+  bottom: 11px;
+  left: 0;
   padding: 3px;
   background-color: rgb(105, 117, 128);
   border-radius: 5px;
@@ -64,7 +63,6 @@ a {
 footer {
   height: 90px;
   background-color: rgb(34, 34, 34);
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
+
+  width: 100%;
 }
