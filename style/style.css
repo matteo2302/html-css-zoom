@@ -76,11 +76,14 @@ button {
   width: 145px;
   background-color: rgb(74, 74, 74);
   color: red;
+  cursor: pointer;
 }
 .tools {
   display: flex;
   gap: 10px;
   margin-left: 10px;
+  align-items: center;
+  cursor: pointer;
 }
 .icons {
   font-size: 30px;
@@ -88,4 +91,15 @@ button {
 
 .share {
   color: rgb(75, 200, 0);
+}
+/*.open {
+  display: flex;
+}
+.open::after {
+  padding-left: 10px;
+  content: "\f106";
+  font-size: 10px;
+}*/
+.fa-angle-up {
+  font-size: 10px;
 }
